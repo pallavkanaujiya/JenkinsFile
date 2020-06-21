@@ -1,0 +1,11 @@
+"sudo apt install default-jdk  
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+systemctl status jenkins
+Then go to browser and type : localhost:8080
+Copy the file and go to CLI
+Sudo SU
+CAT /var/lib/jenkins/secrets/initialAdminPassword
+It will give you a password copy and paste in browser where it was asking
