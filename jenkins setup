@@ -9,3 +9,7 @@ Copy the file and go to CLI
 Sudo SU
 CAT /var/lib/jenkins/secrets/initialAdminPassword
 It will give you a password copy and paste in browser where it was asking
+
+
+
+gcloud compute firewall-rules create jenkinsrule --allow tcp:8080 --source-tags=jenkins --source-ranges=0.0.0.0/0 --description="test"
