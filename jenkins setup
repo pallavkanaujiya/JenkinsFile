@@ -12,4 +12,4 @@ It will give you a password copy and paste in browser where it was asking
 
 
 
-gcloud compute firewall-rules create jenkinsrule --allow tcp:8080 --source-tags=jenkins --source-ranges=0.0.0.0/0 --description="test"
+gcloud compute firewall-rules create <rule-name> --allow tcp:9090 --source-tags=<list-of-your-instances-names> --source-ranges=0.0.0.0/0 --description="<your-description-here>"
